@@ -8,6 +8,7 @@ import os
 import threading
 from socketserver import ThreadingMixIn
 from urllib.parse import unquote, parse_qs
+from http.server import HTTPServer
 
 class ThreadHTTPServer(ThreadingMixIn, HTTPServer):
     "This is an HTTPServer that supports thread-based concurrency.pip"
